@@ -1,0 +1,8 @@
+# Configuración de Streamlit para este proyecto (se lee al ejecutar desde la carpeta del proyecto).
+# headless = true: Streamlit no pide un correo la primera vez ni abre el navegador por su cuenta.
+# La página se abre en http://localhost:8501 (iniciar_app.bat la abre solo).
+[server]
+headless = true
+
+[browser]
+gatherUsageStats = false

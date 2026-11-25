@@ -1,0 +1,27 @@
+{
+  "modelo": "Holt-Winters · sin tendencia · semanal aditivo",
+  "objetivo": "pedidos por día",
+  "ultima_fecha": "2018-08-19",
+  "horizonte_maximo_dias": 28,
+  "rango_error_relativo": {
+    "p10": -0.2523,
+    "p90": 0.5466,
+    "explicacion": "rango probable = pronóstico × (1 + p10) hasta pronóstico × (1 + p90)"
+  },
+  "limpieza": "Black Friday (24 al 29 de noviembre de 2017) reemplazado por el promedio del mismo día de las 2 semanas anteriores",
+  "entrenado_con": "todos los días de 2017-01-05 a 2018-08-19",
+  "metricas_validacion": {
+    "MAE": 54.8419,
+    "RMSE": 69.4612,
+    "MAPE (%)": 32.9991,
+    "R²": -0.1331
+  },
+  "metricas_prueba": {
+    "MAE": 55.8533,
+    "RMSE": 67.7217,
+    "MAPE (%)": 24.6079,
+    "R²": -0.0379
+  },
+  "version_statsmodels": "0.15.0",
+  "fecha": "2026-11-15"
+}

@@ -1,0 +1,48 @@
+{
+  "modelo": "Gradient Boosting",
+  "objetivo": "dias_entrega",
+  "unidad": "días",
+  "transformacion_objetivo": "log1p / expm1",
+  "categoricas": [
+    "customer_state",
+    "seller_state",
+    "categoria",
+    "tipo_pago",
+    "dia_semana"
+  ],
+  "numericas": [
+    "distancia_km",
+    "mismo_estado",
+    "dias_prometidos",
+    "flete_total",
+    "precio_total",
+    "peso_total_g",
+    "volumen_total_cm3",
+    "n_items",
+    "n_vendedores",
+    "cuotas",
+    "hora"
+  ],
+  "hiperparametros": {
+    "min_samples_leaf": 100,
+    "max_leaf_nodes": 15,
+    "learning_rate": 0.03,
+    "l2_regularization": 1.0
+  },
+  "entrenado_con": "todas las compras de 2017-01-05 a 2018-07-31",
+  "evaluacion": "modelo entrenado con compras hasta 2018-04-30 y evaluado con compras de mayo a julio de 2018",
+  "metricas_prueba": {
+    "MAE": 4.5668,
+    "RMSE": 6.3402,
+    "MAPE (%)": 61.0034,
+    "R²": 0.206
+  },
+  "mae_baseline_mediana_prueba": 5.4386,
+  "rango_error_dias": {
+    "p10": -7.68,
+    "p90": 4.77,
+    "explicacion": "rango probable = predicción + p10 hasta predicción + p90 (80% de los pedidos de prueba)"
+  },
+  "version_sklearn": "1.9.1",
+  "fecha": "2026-11-15"
+}

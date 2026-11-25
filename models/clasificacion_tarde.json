@@ -1,0 +1,40 @@
+{
+  "modelo": "Regresión logística",
+  "objetivo": "tarde",
+  "umbral": 0.0945,
+  "tasa_base": 0.0684,
+  "categoricas": [
+    "customer_state",
+    "seller_state",
+    "categoria",
+    "tipo_pago",
+    "dia_semana"
+  ],
+  "numericas": [
+    "distancia_km",
+    "mismo_estado",
+    "dias_prometidos",
+    "flete_total",
+    "precio_total",
+    "peso_total_g",
+    "volumen_total_cm3",
+    "n_items",
+    "n_vendedores",
+    "cuotas",
+    "hora"
+  ],
+  "hiperparametros": {
+    "C": 0.01
+  },
+  "entrenado_con": "todas las compras de 2017-01-05 a 2018-07-31",
+  "evaluacion": "modelo entrenado con compras hasta 2018-04-30 y evaluado con compras de mayo a julio de 2018",
+  "metricas_prueba": {
+    "exactitud": 0.7394,
+    "precisión": 0.0801,
+    "recall": 0.5569,
+    "F1": 0.1401,
+    "AUC": 0.7238
+  },
+  "version_sklearn": "1.9.1",
+  "fecha": "2026-11-15"
+}
